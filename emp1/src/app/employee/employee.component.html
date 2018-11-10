@@ -1,0 +1,15 @@
+
+
+
+<!-- Entered value is: -->
+<!-- Entered id is:<li>{{employee.empId}}</li>
+Entered Name is:<li>{{employee.empName}}</li>
+Entered Salary is:<li>{{employee.empSalary}}</li>
+Entered Date of joining is:<li>{{employee.empDoj}}
+</li>
+display data : -->
+
+
+<app-insertion (add) ="addEmp($event)"></app-insertion>
+<app-display [emps]="emps"></app-display>
+<app-footer ></app-footer>

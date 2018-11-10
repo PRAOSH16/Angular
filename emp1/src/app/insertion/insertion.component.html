@@ -1,0 +1,26 @@
+<h1>Employee Details</h1>
+<table>
+  <tr>
+    <td>Employee Id:</td>
+    <!-- <td><input type="number"  [(ngModel)]="employee.empId"  ></td> -->
+  </tr>
+  <tr>
+    <td>Employee Name:</td>
+    <td><input type="text"  [(ngModel)]="employee.empName"  ></td>
+  </tr>
+  <tr>
+  <td>Employee Salary::</td>
+  <td><input type="number" [(ngModel)]="employee.empSalary"   ></td>
+
+</tr>
+<tr>
+<td>Employee Doj:</td>
+<td><input type="date"[(ngModel)]="employee.empDoj" ></td>
+</tr>
+<tr>
+  <td>
+    <input type="button" value="submit" (click)="addEmp()"/>
+  </td>
+</tr>
+<tr><td>{{employee.empId}}  {{employee.empName}}  {{employee.empSalary}}  {{employee.empDoj}}</td></tr>
+</table>
